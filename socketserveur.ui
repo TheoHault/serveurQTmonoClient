@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>socketServeur</class>
+ <widget class="QMainWindow" name="socketServeur">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>434</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>socketServeur</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Numero de port</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_port">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>50</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>10000</number>
+    </property>
+    <property name="value">
+     <number>5001</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Demarrer">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>331</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Demarrer le serveur</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>361</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Clients</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit_client">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>301</width>
+       <height>161</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>410</y>
+      <width>311</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quitter</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>socketServeur</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
